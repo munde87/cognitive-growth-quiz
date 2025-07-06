@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Cognitive Growth Quiz</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container quiz-container">
+        <header>
+            <a href="/index.html" class="back-link">
+                <i class="fas fa-chevron-left"></i>
+                <span>Back to Home</span>
+            </a>
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>MindQuest</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="quiz-header">
+                <h1>Cognitive Growth Quiz</h1>
+                <div id="age-group-display" class="age-group-display">Age Group: <span></span></div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="quiz-progress"></div>
+                </div>
+            </div>
+
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="ethical">
+                    <i class="fas fa-sparkles"></i>
+                    Ethical Dilemmas
+                </button>
+                <button class="category-tab" data-category="creative">
+                    <i class="fas fa-lightbulb"></i>
+                    Creative Thinking
+                </button>
+                <button class="category-tab" data-category="problem">
+                    <i class="fas fa-brain"></i>
+                    Problem Solving
+                </button>
+            </div>
+
+            <div class="card question-card">
+                <div class="card-header">
+                    <h2>Question</h2>
+                    <button id="new-question-btn" class="icon-button">
+                        <i class="fas fa-refresh"></i>
+                        New Question
+                    </button>
+                </div>
+                <div class="card-content">
+                    <p id="question-text" class="question-text"></p>
+                </div>
+            </div>
+
+            <div id="mcq-section" class="card mcq-card">
+                <div class="card-header">
+                    <h2>Choose Your Answer</h2>
+                </div>
+                <div class="card-content">
+                    <div class="mcq-options" id="mcq-options">
+                        <!-- Options will be inserted here by JavaScript -->
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button id="submit-mcq-btn" class="primary-button" disabled>
+                        <i class="fas fa-paper-plane"></i>
+                        Submit Answer
+                    </button>
+                </div>
+            </div>
+
+            <div id="result-section" class="hidden">
+                <div class="card result-card">
+                    <div class="card-header">
+                        <h2 id="result-header">Your Result</h2>
+                    </div>
+                    <div class="card-content">
+                        <div id="result-content" class="result-content">
+                            <!-- Result content will be inserted here by JavaScript -->
+                        </div>
+                        <div id="explanation" class="explanation">
+                            <!-- Explanation will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button id="next-question-btn" class="primary-button">
+                            Next Question
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="current-year"></span> MindQuest. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitive Growth Quiz</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container home-container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <span>MindQuest</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="card main-card">
+                <div class="quiz-badge">QUIZ</div>
+                <div class="card-header">
+                    <h1>Cognitive Growth Quiz</h1>
+                    <p class="description">
+                        Test your cognitive abilities against AI responses on ethical dilemmas, creative thinking, and problem-solving scenarios.
+                    </p>
+                </div>
+                
+                <div class="category-grid">
+                    <div class="category-item creative">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Creative Thinking</span>
+                    </div>
+                    <div class="category-item ethical">
+                        <i class="fas fa-sparkles"></i>
+                        <span>Ethical Dilemmas</span>
+                    </div>
+                    <div class="category-item problem">
+                        <i class="fas fa-brain"></i>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
+
+                <div class="age-group-section">
+                    <h2>Select Your Age Group</h2>
+                    <p>Questions will be tailored to your age group for an optimal learning experience.</p>
+                    
+                    <div class="age-group-grid">
+                        <div class="age-group-item" data-age-group="5-10">
+                            <div class="age-icon">5-10</div>
+                            <span>Kids</span>
+                        </div>
+                        <div class="age-group-item" data-age-group="11-20">
+                            <div class="age-icon">11-20</div>
+                            <span>Teens</span>
+                        </div>
+                        <div class="age-group-item" data-age-group="21-30">
+                            <div class="age-icon">21-30</div>
+                            <span>Young Adults</span>
+                        </div>
+                        <div class="age-group-item" data-age-group="31-40">
+                            <div class="age-icon">31-40</div>
+                            <span>Adults</span>
+                        </div>
+                        <div class="age-group-item" data-age-group="41+">
+                            <div class="age-icon">41+</div>
+                            <span>Seniors</span>
+                        </div>
+                    </div>  
+                </div>
+                
+                <div class="button-container">
+                    <button id="start-quiz-btn" class="primary-button" disabled>Start Quiz</button>
+                    <a href="/about.html" class="secondary-button">About</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="current-year"></span> MindQuest. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="/script .js"></script>
+</body>
+</html>
